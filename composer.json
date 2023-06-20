@@ -1,6 +1,6 @@
 {
     "name": "dukens/openai-exceptions",
-    "description": "Use the OpenAI API together with Laravel Ignition's Suggestions to show AI-powered fixes for errors in your Laravel application.",
+    "description": "Use the OpenAI API together with Laravel Ignition's Suggestions to show AI-powered fixes for errors in wordpress/sage.",
     "license": "MIT",
     "type": "package",
     "autoload": {
