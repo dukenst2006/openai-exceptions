@@ -13,7 +13,7 @@ composer require --dev dukens/openai-exceptions
 Next, publish the configuration file:
 
 ```bash
-wp acorn vendor:publish --provider="Dukens\OpenaiExceptions\OpenAiSolutionServiceProvider" --tag="config"
+lando wp acorn vendor:publish --provider="Dukens\OpenaiExceptions\OpenAiSolutionServiceProvider" --tag="config"
 ```
 
 This will create a `config/openai-exceptions.php` configuration file in your project, which you can modify to your needs. All options are documented in the file, but the only one you need is your OpenAI API key, which you'll specify in your `.env` file:
