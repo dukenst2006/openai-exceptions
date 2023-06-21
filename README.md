@@ -1,6 +1,6 @@
 # OpenAI powered fixes for wordpress sage errors
 
-Use the OpenAI API together with Laravel Ignition's Suggestions to show AI-powered fixes for errors in your Wordpress/sage application.
+Use the OpenAI API together with Laravel Ignition's Suggestions to show AI-powered fixes for errors in your Sage/Acorn application.
 
 ## Get started
 
@@ -20,12 +20,4 @@ This will create a `config/openai-exceptions.php` configuration file in your pro
 
 ```
 OPENAI_API_KEY={YOUR KEY HERE}
-```
-
-## Customising the prompt
-
-If you wish to customise the prompt that is being sent to the OpenAI client for every exception, you can publish the blade view, and change it as desired:
-
-```bash
- wp acorn vendor:publish --provider="Dukens\OpenaiExceptions\OpenAiSolutionServiceProvider" --tag="views"
 ```
