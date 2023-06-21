@@ -3,7 +3,7 @@
 namespace Dukens\OpenaiExceptions;
 
 use Illuminate\Support\Facades\Cache;
-use OpenAI\Client;
+use OpenAI;
 use Spatie\Backtrace\Backtrace;
 use Spatie\Backtrace\Frame;
 use Spatie\Ignition\Contracts\Solution;
@@ -88,13 +88,5 @@ class OpenAiSolution implements Solution
             'temperature' => config('openai-exceptions.temperature'),
             'prompt' => $this->prompt,
         ])->choices[0]->text;
-
-        // return OpenAI::completions()->create([
-        //     'model' => config('openai-exceptions.model'),
-        //     'max_tokens' => config('openai-exceptions.max_tokens'),
-        //     'temperature' => config('openai-exceptions.temperature'),
-        //     'prompt' => $this->prompt,
-        // ])->choices[0]->text;
-
     }
 }
